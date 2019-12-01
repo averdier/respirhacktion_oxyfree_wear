@@ -56,6 +56,7 @@ public class MainActivity extends WearableActivity implements GoogleApiClient.Co
     }
 
     public void onNextClick(View view) {
+        System.out.println("Did click");
         Log.d("WEAR_APP", "Next clicked");
         if (current < maxSteps) {
             current += 1;

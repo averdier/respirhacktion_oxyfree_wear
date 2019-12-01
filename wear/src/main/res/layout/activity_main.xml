@@ -12,8 +12,7 @@
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:padding="@dimen/inner_frame_layout_padding"
-        app:boxedEdges="all">
+        android:padding="@dimen/inner_frame_layout_padding">
 
         <TextView
             android:id="@+id/main_text_current"
@@ -21,23 +20,26 @@
             android:layout_height="wrap_content"
             android:layout_width="match_parent" />
 
-        <Button
-            android:id="@+id/main_btn_previous"
-            android:background="@null"
-            android:layout_gravity="bottom|left"
-            android:layout_height="50dp"
-            android:layout_width="50dp"
-            android:text="-"
-            android:onClick="onPreviousClick"/>
-
-        <Button
+        <ImageButton
             android:id="@+id/main_btn_next"
-            android:background="@null"
-            android:layout_gravity="bottom|right"
-            android:layout_height="50dp"
             android:layout_width="50dp"
-            android:text="+"
-            android:onClick="onNextClick"/>
+            android:layout_height="50dp"
+            android:layout_gravity="bottom|right"
+            android:layout_margin="@dimen/screen_percentage_10"
+            android:background="@null"
+            android:foreground="@drawable/icons8plus30"
+            android:onClick="onPreviousClick" />
+
+        <ImageButton
+            android:id="@+id/main_btn_previous"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="bottom|left"
+            android:layout_margin="@dimen/screen_percentage_10"
+            android:layout_marginHorizontal="@dimen/screen_percentage_10"
+            android:background="@null"
+            android:foreground="@drawable/icons8moins30"
+            android:onClick="onNextClick" />
 
     </FrameLayout>
 </androidx.wear.widget.BoxInsetLayout>
