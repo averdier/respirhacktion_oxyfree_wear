@@ -27,7 +27,7 @@
             android:layout_gravity="bottom|right"
             android:layout_margin="@dimen/screen_percentage_10"
             android:background="@null"
-            android:foreground="@drawable/icons8plus30"
+            android:foreground="@drawable/icons8moins30"
             android:onClick="onPreviousClick" />
 
         <ImageButton
@@ -38,7 +38,7 @@
             android:layout_margin="@dimen/screen_percentage_10"
             android:layout_marginHorizontal="@dimen/screen_percentage_10"
             android:background="@null"
-            android:foreground="@drawable/icons8moins30"
+            android:foreground="@drawable/icons8plus30"
             android:onClick="onNextClick" />
 
     </FrameLayout>
